@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BC7B4CA-5022-4FA9-8F03-C79A3D1A0E3F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cantitate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cantitate.Designer.cs">
+      <DependentUpon>cantitate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caserie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caserie.Designer.cs">
+      <DependentUpon>Caserie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CautaProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CautaProd.Designer.cs">
+      <DependentUpon>CautaProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBazeDeDate.cs" />
+    <Compile Include="MeniuStoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuStoc.Designer.cs">
+      <DependentUpon>MeniuStoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniuStoc1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuStoc1.Designer.cs">
+      <DependentUpon>MeniuStoc1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpProdus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpProdus.Designer.cs">
+      <DependentUpon>PopUpProdus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniuProdus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuProdus.Designer.cs">
+      <DependentUpon>MeniuProdus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniuCateg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuCateg.Designer.cs">
+      <DependentUpon>MeniuCateg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu.Designer.cs">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BazaBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BazaBrand.Designer.cs">
+      <DependentUpon>BazaBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpAdauga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpAdauga.Designer.cs">
+      <DependentUpon>PopUpAdauga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpCateg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpCateg.Designer.cs">
+      <DependentUpon>PopUpCateg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BazaBrand.resx">
+      <DependentUpon>BazaBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cantitate.resx">
+      <DependentUpon>cantitate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caserie.resx">
+      <DependentUpon>Caserie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CautaProd.resx">
+      <DependentUpon>CautaProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuCateg.resx">
+      <DependentUpon>MeniuCateg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuProdus.resx">
+      <DependentUpon>MeniuProdus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuStoc.resx">
+      <DependentUpon>MeniuStoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuStoc1.resx">
+      <DependentUpon>MeniuStoc1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpAdauga.resx">
+      <DependentUpon>PopUpAdauga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpCateg.resx">
+      <DependentUpon>PopUpCateg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpProdus.resx">
+      <DependentUpon>PopUpProdus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freestock_558836185.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e22c3a567f036e4f4f6d8676d74bcad5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\490c67a0ab7cb8630fbbe8dfaf440982.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\82ba096ffb0a93fa603f098d992b8cb8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fc158b8735d49e8fad86d19c1b55df2e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d9da41b95372d33bb302848e3d7e708d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4ba01d5ccf659fd2131ba142dd26bdfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98877036e08166a3f6ec909e71547e63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\490c67a0ab7cb8630fbbe8dfaf4409821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-XRight-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchpng.com-search-line-icon-png-image-free-download-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchpng.com-search-icon-png-image-free-download-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
